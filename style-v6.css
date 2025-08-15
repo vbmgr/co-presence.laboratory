@@ -1,0 +1,40 @@
+:root{
+  --bg:#0b0b0e;--grid1:rgba(255,255,255,.05);--grid2:rgba(255,255,255,.08);
+  --text:#e9e9ea;--muted:#b9b9c2
+}
+html,body{height:100%}
+body{
+  margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);
+  background:
+    repeating-linear-gradient(0deg,transparent 0 299px,var(--grid2) 300px),
+    repeating-linear-gradient(90deg,transparent 0 299px,var(--grid2) 300px),
+    repeating-linear-gradient(0deg,transparent 0 59px,var(--grid1) 60px),
+    repeating-linear-gradient(90deg,transparent 0 59px,var(--grid1) 60px),
+    var(--bg);
+  overflow:hidden
+}
+.ticker{position:fixed;top:0;left:0;width:100vw;overflow:hidden;white-space:nowrap;pointer-events:none;z-index:10;
+  background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0))}
+.ticker__track{display:inline-block;padding:16px 0 20px;font-size:56px;letter-spacing:.48em;color:var(--muted);
+  animation:tickerMove 40s linear infinite;will-change:transform}
+.ticker__track span{padding-right:48px}
+@keyframes tickerMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#canvas{position:fixed;inset:0;width:100vw;height:100vh;display:block}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:20}
+.modal.open{opacity:1;pointer-events:auto}
+.modal__panel{width:min(920px,90vw);max-height:min(80vh,900px);background:rgba(18,18,24,.96);
+  border:1px solid rgba(255,255,255,.12);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.modal__close{position:absolute;top:8px;right:12px;font-size:28px;line-height:1;border:0;background:transparent;color:#fff;cursor:pointer;opacity:.9}
+.modal__body{padding:24px 22px 26px;overflow:auto}
+.modal__body p{white-space:pre-wrap;line-height:1.5;color:#ddd;font-size:16px}
+
+/* Participant pages (not used on index but kept) */
+.back{position:fixed;top:14px;right:18px;z-index:12;color:#d9d9e2;text-decoration:none;font-size:14px;letter-spacing:.08em;
+  padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:6px;background:rgba(0,0,0,.25)}
+.content{position:relative;max-width:880px;margin:100px auto 80px;padding:0 18px}
+.content h1{margin:0 0 8px;font-weight:600}
+.content p{color:#c9c9d2;line-height:1.55}
+.content img{width:100%;border-radius:8px;margin:14px 0 6px}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participant</title>
+  <link rel="stylesheet" href="../style-v6.css">
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker__track" aria-hidden="true">
+      <span>We are here, connected through invisible lines — a shared presence across space, a constellation of minds, a web of co-being. &nbsp;•&nbsp;</span>
+      <span>We are here, connected through invisible lines — a shared presence across space, a constellation of minds, a web of co-being. &nbsp;•&nbsp;</span>
+      <span>We are here, connected through invisible lines — a shared presence across space, a constellation of minds, a web of co-being. &nbsp;•&nbsp;</span>
+      <span>We are here, connected through invisible lines — a shared presence across space, a constellation of minds, a web of co-being. &nbsp;•&nbsp;</span>
+    </div>
+  </div>
+  <a class="back" href="../index.html">← Back</a>
+  <div class="content" id="root"></div>
+  <script>
+    fetch('../data.json').then(r=>r.json()).then(DATA=>{
+      const idx = 6 - 1;
+      const p = DATA.participants[idx];
+      document.title = p.name + ' — Co-Presence';
+      document.getElementById('root').innerHTML = `
+        <h1>${p.name}</h1>
+        <p>${p.bio}</p>
+        <img src="../images/${p.work}" alt="${p.name}'s work"/>
+      `;
+    });
+  </script>
+</body>
+</html>

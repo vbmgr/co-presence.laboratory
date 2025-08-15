@@ -1,0 +1,58 @@
+{
+  "participants": [
+    {
+      "name": "Participant 1",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol1.svg",
+      "work": "work1.jpg"
+    },
+    {
+      "name": "Participant 2",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol2.svg",
+      "work": "work2.jpg"
+    },
+    {
+      "name": "Participant 3",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol3.svg",
+      "work": "work3.jpg"
+    },
+    {
+      "name": "Participant 4",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol4.svg",
+      "work": "work4.jpg"
+    },
+    {
+      "name": "Participant 5",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol5.svg",
+      "work": "work5.jpg"
+    },
+    {
+      "name": "Participant 6",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol6.svg",
+      "work": "work6.jpg"
+    },
+    {
+      "name": "Participant 7",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol7.svg",
+      "work": "work7.jpg"
+    },
+    {
+      "name": "Participant 8",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol8.svg",
+      "work": "work8.jpg"
+    },
+    {
+      "name": "Participant 9",
+      "bio": "Short bio goes here.",
+      "symbol": "bw-symbols/symbol9.svg",
+      "work": "work9.jpg"
+    }
+  ]
+}
