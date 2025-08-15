@@ -47,12 +47,6 @@
       "bio": "Short bio goes here.",
       "symbol": "bw-symbols/symbol8.svg",
       "work": "work8.jpg"
-    },
-    {
-      "name": "Participant 9",
-      "bio": "Short bio goes here.",
-      "symbol": "bw-symbols/symbol9.svg",
-      "work": "work9.jpg"
     }
   ]
 }

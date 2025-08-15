@@ -1,1 +1,6 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='216' height='216' viewBox='0 0 160 160'><g stroke='white' stroke-width='8' stroke-linecap='round' fill='none'><line x1='24' y1='80' x2='136' y2='80'/></g></svg>
+<svg xmlns='http://www.w3.org/2000/svg' width='216' height='216' viewBox='0 0 160 160'>
+  <g stroke='white' stroke-width='8' stroke-linecap='round' fill='none'>
+    <line x1='24' y1='100' x2='136' y2='100'/>
+    <path d='M28,68 C44,52 60,52 76,68 C92,84 108,84 124,68' stroke-width='6'/>
+  </g>
+</svg>
